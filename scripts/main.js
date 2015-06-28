@@ -36,7 +36,7 @@ function exportList(event) {
         command: 'getCardListId',
         id: first_card_id
     }, function (data) {
-        if (data.idList !== undefined) {
+        if (data.idList !== undefined) {S
             chrome.extension.sendMessage({
                 command: 'getListCards',
                 id: data.idList
